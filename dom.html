@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        /* #second-title{
+            background-color: rgba(210, 105, 30, 0.26);
+        } */
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Welcome to my blog website</h1>
+        </header>
+    </main>
+    <section>
+        <article>
+            <h3 class="abir">my Awesome Blog-1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, voluptates molestiae amet tempora maiores officia molestias. Quisquam, ratione. Ullam iusto suscipit explicabo dolores tempore deserunt facilis, sint nemo odio cupiditate?</p>
+        </article>
+        <article>
+            <h3 id="second-title">my Awesome Blog-2</h3>
+            <p>Deleniti, molestiae dolorum? Beatae ipsum numquam reprehenderit commodi distinctio esse sit. Sapiente perspiciatis provident facere, cupiditate facilis iusto ipsum, nulla repellendus temporibus aspernatur repellat blanditiis. Porro totam voluptate repellendus minima.</p>
+        </article>
+        <article>
+            <h3 id="third-title">my Awesome Blog-3</h3>
+            <p>Veritatis neque corporis voluptatem magni provident ullam delectus assumenda tempore sit, architecto consectetur accusamus quidem quam nisi? Eos molestias, veritatis ipsum voluptate autem ex excepturi laborum consectetur corporis hic minus.</p>
+        </article>
+        <article>
+            <h1 id="fourt-title">my Awesome Blog-4</h1>
+            <p>Veritatis neque corporis voluptatem magni provident ullam delectus assumenda tempore sit, architecto consectetur accusamus quidem quam nisi? Eos molestias, veritatis ipsum voluptate autem ex excepturi laborum consectetur corporis hic minus.</p>
+        </article>
+    </section>
+
+    <script>
+        // const student = {name: 'abir hasan', age:18, height:60}
+        // console.log(document.body);
+        // const blogTitle = [ 'h3', 'h3'];
+        // const blogTitles = document.getElementsByTagName('h3')
+        // for(const h3 of blogTitles){
+        //     console.log(h3);
+        // }
+
+        // const blogDetels = document.getElementsByTagName('p');
+        // for( const p of blogDetels){
+        //     console.log(p.innerText);
+        // }
+        
+        const titel1 = document.getElementsByClassName('abir');
+        titel1.style.textAlign = 'center';
+
+        const third = document.getElementById('third-title');
+        third.innerText ="Titele by Updet";
+        third.style.background = "salmon";
+        third.style.margin = '10px';
+        document.getElementsByTagName('h1').innerText = 'abir hasan';
+
+        const 
+    </script>
+</body>
+</html>

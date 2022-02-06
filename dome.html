@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <style>
+        /* .boge{
+            border: 3px solid orange;
+            margin: 5px;
+            padding: 5px;
+            border-radius: 10px;
+
+        } */
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Welcome to my blog website</h1>
+        </header>
+    </main>
+    <section id="blogs">
+        <header>
+            <h2>Blogs list</h2>
+            <ul id="blog-list">
+                <li>blog-1</li>
+                <li>blog-2</li>
+                <li>blog-3</li>
+                <li>blog-4</li>
+            </ul>
+        </header>
+        <article class="boge">
+            <h3 class="abir">my Awesome Blog-1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, voluptates molestiae amet tempora maiores officia molestias. Quisquam, ratione. Ullam iusto suscipit explicabo dolores tempore deserunt facilis, sint nemo odio cupiditate?</p>
+        </article>
+        <article class="boge">
+            <h3 id="second-title">my Awesome Blog-2</h3>
+            <p>Deleniti, molestiae dolorum? Beatae ipsum numquam reprehenderit commodi distinctio esse sit. Sapiente perspiciatis provident facere, cupiditate facilis iusto ipsum, nulla repellendus temporibus aspernatur repellat blanditiis. Porro totam voluptate repellendus minima.</p>
+        </article>
+        <article class="boge">
+            <h3 id="third-title">my Awesome Blog-3</h3>
+            <p>Veritatis neque corporis voluptatem magni provident ullam delectus assumenda tempore sit, architecto consectetur accusamus quidem quam nisi? Eos molestias, veritatis ipsum voluptate autem ex excepturi laborum consectetur corporis hic minus.</p>
+        </article>
+        <article class="boge">
+            <h3>my Awesome Blog-4</h3>
+            <p>Veritatis neque corporis voluptatem magni provident ullam delectus assumenda tempore sit, architecto consectetur accusamus quidem quam nisi? Eos molestias, veritatis ipsum voluptate autem ex excepturi laborum consectetur corporis hic minus.</p>
+        </article>
+        <script>
+             const third = document.getElementById('third-title');
+        third.innerText ="Titele by Updet";
+        third.style.background = "salmon";
+        third.style.margin = '10px';
+        third.style.textAlign = 'center';
+        third.innerText='new bloge amader tomra jaba anki bolo';
+
+        // creeate and usging js 
+        const li = document.createElement('li');
+         li.innerText='Blog-5';
+         li.innerText="blog-6";
+        //  where to add 
+        const ul = document.getElementById("blog-list");
+
+        // appnend new elemant
+        ul.appendChild(li); 
+
+        // add article 
+        const article = document.createElement('article');
+        article.classList.add('boge')
+        // const h3 = document.createElement('h3');
+        // h3.innerText="my awesome blog-5";
+        // const p = document.createElement('p');
+        // p.innerText = "Veritatis neque corporis voluptatem magni provident ullam delectus assumenda ";
+        // article.appendChild(h3);
+        // article.appendChild(p);
+
+        article.innerHTML = `
+        <h3>my awesome blog-5 <h3>
+            <p> Veritatis neque corporis voluptatem magni provident ullam delectus assumenda abir hasan new text amar joono doya korben tpomara shobai </p>
+        `
+
+        // parent of article
+        const blogSection = document.getElementById("blogs");
+        blogSection.appendChild(article);
+
+        const blogs = document.getElementsByClassName('boge');
+        for(const boge of blogs){
+            boge.style.border = '3px solid orange';
+            boge.style.margin = '5px';
+            boge.style.padding = '5px';
+            boge.style.borderRadius = '10px';
+        }
+
+        
+
+        </script>
+</body>
+</html>
